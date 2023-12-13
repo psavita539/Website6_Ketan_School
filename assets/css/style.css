@@ -1,0 +1,658 @@
+ @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     border: none;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ :root {
+     --bg-light-orange: #fdf6ed;
+ }
+
+ /* Universal CSS Start */
+ .text-orange {
+     color: #EA512E;
+ }
+
+ .text-black {
+     color: #1B0238;
+ }
+
+ .text-silver {
+     color: #6B6B84;
+ }
+
+ .bg-orange {
+     background: #EA512E;
+ }
+
+ .bg-yellow {
+     background: #F5890D;
+ }
+
+ .bg-light-orange {
+     background: #FDF6ED;
+ }
+
+ .mt-7 {
+     margin-top: 70px;
+ }
+
+ .mt-10 {
+     margin-top: 100px;
+ }
+
+ .mt-15 {
+     margin-top: 150px;
+ }
+
+ .mt-20 {
+     margin-top: 200px;
+ }
+
+ .pb-70 {
+     padding-bottom: 70px;
+ }
+
+ .pt-100 {
+     padding-top: 100px;
+ }
+
+ .pb-100 {
+     padding-bottom: 100px;
+ }
+
+ p {
+     margin-bottom: 15px;
+     line-height: 1.8;
+     color: #6b6b84;
+     font-weight: 400;
+     font-family: "Roboto", sans-serif;
+     font-size: 16px;
+     margin-top: 20px;
+ }
+
+ .h1,
+ .h2,
+ .h3,
+ .h4,
+ .h5,
+ .h6,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     color: #1b0238;
+     font-family: "Catamaran", sans-serif;
+     font-weight: bold;
+ }
+
+ .btn {
+     color: #fff;
+     padding: 12px 35px;
+     font-size: 16px;
+     border-radius: 10px;
+     font-weight: 500;
+     transition: 0.7s ease;
+     position: relative;
+     background: #EA512E;
+ }
+
+ .btn:hover {
+     color: #fff;
+     background: #F5890D;
+     box-shadow: #F5890D 0px 54px 0px 0px inset;
+ }
+
+ color {
+     color: #EA512E;
+ }
+
+ /* Universal CSS End */
+ /* Header Section Start */
+ .dropdown-menu {
+     width: 250px;
+     border-radius: 0px;
+     border: 0px;
+     box-shadow: 0px 5px 12px 0px rgb(226, 224, 224);
+     line-height: 30px;
+     animation: up linear 0.3s;
+ }
+
+ .dropdown-item img {
+     height: 30px;
+     width: 30px;
+     border-radius: 50%;
+ }
+
+ .nav-item .nav-link.active {
+     color: #EA512E !important;
+ }
+
+ .navbar .navbar-nav .nav-item a {
+     color: #1B0238;
+     font-size: 16px;
+     font-weight: 600 !important;
+ }
+
+ .nav-link:hover,
+ .dropdown-item:hover {
+     color: #EA512E !important;
+ }
+
+ /* Header Section End */
+
+ /* banner section start */
+ .banner {
+     background: url(../img/main-banner-bg.jpg);
+     width: 100%;
+     height: 730px;
+     background-size: cover;
+     background-position: center center;
+ }
+
+ .banner h1 {
+     font-size: 60px;
+     margin-top: 20px;
+     color: #1B0238;
+     font-weight: bold;
+     margin-bottom: 20px;
+ }
+
+ .shape-1 {
+     top: 3.5%;
+     left: .7%;
+     animation: move 2s linear alternate infinite;
+ }
+
+ .shape-2 {
+     top: 3.5%;
+     left: 50%;
+     animation: move2 2s linear alternate infinite;
+ }
+
+ .shape-3 {
+     top: 64%;
+     left: .7%;
+     z-index: 9;
+     animation: move 2s linear alternate infinite;
+ }
+
+ .shape-4 {
+     top: 70%;
+     left: 52%;
+     animation: up 2s linear alternate infinite;
+ }
+
+ .imgset {
+     height: 95%;
+     width: 619px;
+     padding-left: 38px;
+ }
+
+ .btn-1 {
+     background: #F5890D;
+     transition: 0.7s ease;
+ }
+
+ .btn-1:hover {
+     background: #EA512E;
+     box-shadow: #EA512E 0px 74px 0px 0px inset;
+ }
+
+ /* banner section end */
+ /* Who we are start */
+ .who-we-are span,
+ .classes span,
+ .core span,
+ .teacher span,
+ .event span,
+ .news span,
+ .testimonial span {
+     font-weight: 600;
+     font-size: 20px;
+     color: #EA512E;
+     font-family: 'Sacramento', cursive;
+ }
+
+ .who-we-are h3,
+ .classes h3,
+ .core h3,
+ .teacher h3,
+ .event h3,
+ .news h3,
+ .testimonial h3 {
+     font-size: 45px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+
+ .who-we-are .image {
+     position: relative;
+     z-index: 1;
+ }
+
+ .who-we-are .image::before {
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-color: #ea512e;
+     left: 0;
+     right: 0;
+     top: 0;
+     z-index: -1;
+     border-radius: 50%;
+     transition: 0.5s;
+     animation: border-transform-default 10s linear infinite alternate forwards;
+ }
+
+ .who-we-are .image img {
+     border-radius: 50%;
+     padding: 20px;
+ }
+
+ .who-we-are .image::after {
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-color: #f5890d;
+     left: 0;
+     right: 0;
+     top: 0;
+     z-index: -1;
+     border-radius: 50%;
+     transition: 0.5s;
+     animation: border-transform-default 50s linear infinite alternate forwards;
+ }
+
+ .who-we-are ul li {
+     line-height: 40px;
+     font-weight: bold;
+     font-size: 16px;
+ }
+
+ .who-we-are ul li span {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background: #EA512E;
+     display: inline-block;
+     font-size: 14px;
+     color: #fff;
+     text-align: center;
+     line-height: 30px;
+     margin-right: 6px;
+     transition: all 0.5s;
+     font-family: "Catamaran", sans-serif;
+ }
+
+ .who-we-are ul li span:hover {
+     background-color: #F5890D;
+ }
+
+ .who-shape {
+     left: 85%;
+     animation: move3 2s linear alternate infinite;
+ }
+
+ /* Who we are end */
+
+ /* classes section start */
+ .mycard:hover .title {
+     color: #EA512E !important;
+     transition: all 0.6s ease;
+ }
+
+ .classes .card:hover img {
+     /* transform: scale(1.07); */
+     transform: rotate(2deg) scale(1.2);
+     transition: all 0.3s linear;
+ }
+
+ .price {
+     position: absolute;
+     padding: 10px;
+     background-color: #ea512e;
+     right: 0;
+     top: 45.4%;
+     font-size: 20px;
+     border-radius: 0 0 0 10px;
+     font-weight: bold;
+     color: #fff;
+     line-height: 1;
+ }
+
+ .mycard:hover .price {
+     background: #F5890D !important;
+     transition: all 0.6s ease;
+ }
+
+ /* classes section end */
+
+ /* core value section start */
+ .core .number {
+     width: 60px;
+     height: 60px;
+     line-height: 55px;
+     text-align: center;
+     border-radius: 50%;
+     display: inline-block;
+     margin-top: 1.5%;
+     margin-right: 20px;
+     font-size: 25px;
+     font-weight: 100;
+     color: #1b0238;
+     border: 3px solid #fff;
+     outline-offset: 2px;
+     transition: 0.5s;
+     cursor: pointer;
+     font-family: "Catamaran", sans-serif;
+ }
+
+ .core .number:hover {
+     color: #fff;
+     background: #EA512E !important;
+     transition: 0.5s;
+     z-index: 1;
+ }
+
+ /* core value section end */
+
+ /* Our Teacher section start */
+ .teacher {
+     background: url(../img/teacher-bg.jpg);
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     z-index: -9 !important;
+ }
+
+ .teacher .social-media {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin-bottom: -70px;
+     transition: all 0.5s ease-in;
+ }
+
+ .teacher .t-image {
+     z-index: 9 !important;
+ }
+
+ .teacher .t-image::before {
+     position: absolute;
+     content: "";
+     height: 100%;
+     width: 100%;
+     background-color: #ea512e;
+     left: 0;
+     right: 0;
+     top: 0;
+     z-index: -1;
+     border-radius: 50%;
+     transition: 0.5s;
+     animation: border-transform-default 20s linear infinite alternate forwards;
+ }
+
+ .social-media {
+     text-align: center;
+ }
+
+ .teacher .social-media li {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background: #EA512E;
+     color: #fff;
+     line-height: 32px;
+ }
+
+ .social-media ul li a {
+     color: #fff;
+ }
+
+ .teacher .t-image:hover .social-media {
+     margin-bottom: 0px;
+     transition: all 0.5s ease-out;
+ }
+
+ .teacher .social-media li:hover {
+     background: #f5890d;
+     transition: 0.3s ease;
+ }
+
+ /* Our Teacher section end */
+
+ /* Testimonial Section Start */
+ .test-card {
+     background: #FEE9CA;
+     height: auto;
+     border-radius: 49%;
+     padding: 35px;
+     text-align: center;
+ }
+
+ .test-card p {
+     font-style: italic;
+     line-height: 1.8;
+ }
+
+ .test-card div {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     background: #fff;
+     margin: auto;
+     transition: all 0.3s linear;
+     margin-bottom: 10px;
+
+ }
+
+ .test-card div:hover {
+     background: #EA512E;
+ }
+
+ .test-card div:hover .fa-quote-left {
+     color: #fff !important;
+ }
+
+ .bird {
+     margin-top: 20px;
+     margin-left: 90px;
+ }
+
+ /* Testimonial Section end */
+
+ /* Event section start */
+ .event {
+     background: url(../img/event-bg.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center center;
+     background-repeat: no-repeat;
+
+ }
+
+ /* Event section end */
+ /* News Section start */
+ .mycard1:hover .title {
+     color: #EA512E !important;
+     transition: all 0.6s ease;
+ }
+
+ .news .card1:hover img {
+     transform: rotate(2deg) scale(1.2);
+     transition: all 0.3s linear;
+ }
+
+ .card-d {
+     font-size: 14.5px;
+ }
+
+ .card1 {
+     background: #FDEEE9;
+     border-radius: 10px 10px 10px 10px;
+     padding-bottom: 20px;
+ }
+
+ /* News Section end */
+
+ /* footer section starts */
+ footer {
+     background: linear-gradient(rgba(4, 4, 4, 0.9), rgba(6, 6, 6, 0.9)),
+         url(../img/footer-bg.jpg);
+     background-size: cover;
+     background-position: 100% 100%;
+     background-attachment: fixed;
+     position: relative;
+     z-index: 1;
+
+ }
+
+ footer .social li {
+     background-color: #EA512E;
+     width: 35px;
+     height: 35px;
+     border-radius: 50px;
+     display: inline-block;
+     text-align: center;
+     padding-top: 4px;
+ }
+
+ footer .social li:hover {
+     background: #F5890D;
+     transform: translateY(-5px);
+ }
+
+ .line,
+ .line1 {
+     text-decoration: none;
+     position: relative;
+     color: #fff;
+ }
+
+ .line:before,
+ .line1:before {
+     content: "";
+     position: absolute;
+     bottom: -2px;
+     height: 0.5px;
+     width: 0;
+     background: #ea512e;
+     transition: width 0.3s ease;
+ }
+
+ .line:hover:before {
+     width: 100%;
+ }
+
+ .line1:hover:before {
+     width: 46%;
+ }
+
+ .line:hover,
+ .line1:hover {
+     color: #EA512E;
+ }
+
+ .gallery {
+     width: 90%;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: auto auto auto;
+     grid-gap: 4px;
+ }
+
+ .photo {
+     overflow: hidden;
+     background: #EA512E;
+ }
+
+ .g-img {
+     transition: 0.6s all ease;
+ }
+
+ .photo:hover .g-img {
+     transform: scale(1.2);
+     opacity: 0.5;
+ }
+
+ .copy {
+     background: #091629;
+     height: 80px;
+ }
+
+ /* footer section end */
+
+ @keyframes up {
+     0% {}
+
+     100% {
+         translate: 0px 30px
+     }
+ }
+
+ @keyframes move {
+     0% {}
+
+     100% {
+         left: 3%;
+     }
+ }
+
+ @keyframes move2 {
+     0% {}
+
+     100% {
+         left: 53%;
+     }
+ }
+
+ @keyframes move3 {
+     0% {}
+
+     100% {
+         left: 82%
+     }
+ }
+
+ @keyframes border-transform-default {
+
+     0%,
+     100% {
+         border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+     }
+
+     14% {
+         border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+     }
+
+     28% {
+         border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+     }
+
+     42% {
+         border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+     }
+
+     56% {
+         border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+     }
+
+     70% {
+         border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+     }
+
+     84% {
+         border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+     }
+ }
